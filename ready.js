@@ -12,8 +12,22 @@ let version = '1.0.0';
 
 }());
 
+// Destination root
+const destRoot = 'D:/plugins';
+
+// Create versioned folder name: myplugin_1.0.0
+const destFolder = path.join(destRoot, dirName, version);
+
+// Ensure the folder exists
+if (!fs.existsSync(destFolder)) {
+  fs.mkdirSync(destFolder, { recursive: true });
+}
+
+const zipPath = path.join(destFolder, `${dirName}.zip`);
+console.log('Creating zip at: ', zipPath);
+
 // create a file to stream archive data to.
-const output = fs.createWriteStream('D:/plugins/' + dirName + '-v' + version + '.zip');
+const output = fs.createWriteStream(zipPath);
 const archive = archiver('zip');
 
 

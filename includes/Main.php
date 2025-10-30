@@ -99,7 +99,7 @@ final class Main {
         wp_enqueue_script('jquery-ui-sortable');
         wp_enqueue_script('jquery-ui-accordion');
         wp_enqueue_script('jquery-ui-tabs');
-        wp_enqueue_script('mapdl_admin_script', MAPDL_URL_LITE . '/assets/js/admin.js', ['jquery-ui-accordion'], MAPDL_VERSION_LITE);
+        wp_enqueue_script('mapdl_admin_script', MAPDL_URL_LITE . '/assets/js/admin.js', ['jquery-ui-accordion'], MAPDL_VERSION_LITE, true);
         wp_enqueue_script('select2');
         //wp_enqueue_script('jquery-ui-tooltip');
         wp_localize_script(
