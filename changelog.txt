@@ -1,4 +1,7 @@
 
+## [1.0.1] – 2025-12-25
+### 🛠 Improvements
+🚀 Fixed styling of the endpoint content caused by missing wrapper
 
 ## [1.0.0] – 2025-10-25
 ### 🛠 Improvements

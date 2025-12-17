@@ -152,13 +152,17 @@ class MAPDL_Classic_My_Account {
                 if (has_action('woocommerce_account_' . $slug . '_endpoint')) {
                     $filtered_slug = apply_filters('mapdl_before_endpoint_slug', $slug);
                     $endpoint = mapdl_get_endpoint($filtered_slug);
-                    do_action('woocommerce_account_' . $slug . '_endpoint', $value);
+                    do_action('mapdl_before_endpoint_content', $endpoint);
+                    if ($endpoint) {
+                        do_action('woocommerce_account_' . $slug . '_endpoint', $value);
+                    }
                     if (!$endpoint) {
                         echo '<div class="divi_map-endpoint-content">';
                         woocommerce_output_all_notices();
                         do_action('woocommerce_account_' . $slug . '_endpoint', $value);
                         echo '<div><!--!$endpoint => do_action -->';
                     }
+                    do_action('mapdl_after_endpoint_content', $endpoint);
                     return;
                 }
             }
@@ -170,10 +174,16 @@ class MAPDL_Classic_My_Account {
             && has_action('woocommerce_account_' . $default_endpoint . '_endpoint')
         ) {
             $endpoint = mapdl_get_endpoint($default_endpoint);
+            do_action('mapdl_before_endpoint_content', $default_endpoint);
             do_action('woocommerce_account_' . $default_endpoint . '_endpoint');
+            do_action('mapdl_after_endpoint_content', $default_endpoint);
         } elseif (isset($wp->query_vars['dashboard']) || 'dashboard' === $default_endpoint) {
+            do_action('mapdl_before_endpoint_content', $default_endpoint);
             mapdl_display_dashboard();
+            do_action('mapdl_after_endpoint_content', $default_endpoint);
         } else {
+            do_action('mapdl_before_endpoint_content', $default_endpoint);
+            do_action('mapdl_after_endpoint_content', $default_endpoint);
             mapdl_display_account_content($default_endpoint);
         }
     }

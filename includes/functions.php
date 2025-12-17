@@ -1,8 +1,21 @@
 <?php
-
+add_action('mapdl_before_endpoint_content', 'mapdl_display_before_content', 10, 1);
+add_action('mapdl_after_endpoint_content', 'mapdl_display_after_content', 10, 1);
 add_filter('mapdl_before_endpoint_slug', 'mapdl_before_endpoint_slug');
 add_filter('mapdl_connected_sub_endpoint', 'mapdl_connected_sub_endpoint');
+if (!function_exists('mapdl_display_before_content')) {
+    function mapdl_display_before_content($slug) {
 
+        echo '<div class="divi_map-endpoint-content">';
+        woocommerce_output_all_notices();
+    }
+}
+if (!function_exists('mapdl_display_after_content')) {
+    function mapdl_display_after_content($slug) {
+
+        echo '</div><!--divi_map-endpoint-content-->';
+    }
+}
 if (!function_exists('mapdl_connected_sub_endpoint')) {
     function mapdl_connected_sub_endpoint($slug) {
         if ($slug === 'orders') {

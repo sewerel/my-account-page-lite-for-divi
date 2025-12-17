@@ -3,9 +3,9 @@ Contributors: sewerel
 Tags: woocommerce, divi, my account, endpoints, divi builder
 Requires at least: 5.2
 Text Domain: my-account-page-lite-for-divi
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,13 +15,13 @@ Easily style the WooCommerce My Account Page using Divi Builder. Add icons, rena
 
 **Customize Your WooCommerce My Account Page with Divi – The Easy Way!** 
 
-Divi My Account Page Lite is a lightweight yet powerful plugin that gives you more control over the default WooCommerce "My Account" page – all within the Divi Builder.
+[Divi My Account Page Lite](https://powdithemes.com/divi-my-account-page-lite/?utm_source=wprepository&utm_medium=readme&utm_campaign=divi-my-account-page-lite&utm_content=demolink) is a lightweight yet powerful plugin that gives you more control over the default WooCommerce "My Account" page – all within the Divi Builder.
 
 No more plain layouts or limited customization options. With this plugin, you can easily personalize the customer account experience and make it look and feel like the rest of your Divi-powered website.
 
 Perfect for store owners, designers, developers and any Divi users who want to create a cohesive and professional WooCommerce experience — without writing a single line of code.
 
-✅ **Features in the Free (Lite) Version:**
+✅ **Features in the [Free (Lite) Version](https://powdithemes.com/divi-my-account-page-lite/?utm_source=wprepository&utm_medium=readme&utm_campaign=divi-my-account-page-lite&utm_content=demolink):**
 
 + **Rename WooCommerce Endpoints**
 Customize the labels of default account tabs like “Orders,” “Downloads,” or “Dashboard.”
@@ -75,7 +75,7 @@ Additional helpful links:
 - [Divi My Account Page Lite Documentation](https://powdithemes.com/docs-category/divi-my-account-page-lite/?utm_source=wprepository&utm_medium=readme&utm_campaign=divi-my-account-page-lite&utm_content=docslink)
 - [Divi My Account Page Pro Documentation](https://powdithemes.com/docs-category/divi-my-account-page/?utm_source=wprepository&utm_medium=readme&utm_campaign=divi-my-account-page-lite&utm_content=docslink)
 
-If you have any questions about this plugin, you can post a thread in the [WordPress.org forum](https://wordpress.org/support/plugin/divi-my-account-page-lite/). Please search existing threads before starting a new one.
+If you have any questions about this plugin, you can post a thread in the [WordPress.org forum](https://wordpress.org/support/plugin/my-account-page-lite-for-divi/). Please search existing threads before starting a new one.
 
 == Installation ==
 
@@ -96,35 +96,24 @@ That feature is included in the Pro version.
 
 == Screenshots ==
 
-1. Divi MyAccount Page settings screen.
-2. Reordered and renamed WooCommerce My Account menu.
-3. Custom icons next to My Account menu items.
-4. Default endpoint changed from Dashboard to Orders.
-5. Styling My Account with Divi Builder’s "My Account Classic" module.
+1. Styling My Account with Divi Builder’s "My Account Classic" module.
+2. "My Account Classic" module design capabilities.
+3. My Account Page navigation style examples.
+4. "My Account Classic" module design options.
+5. Divi MyAccount Page settings screen.
+6. Change endpont label (name) and adding icon.
+7. Reorder endpoint Orders set to the top of the menu.
+8. Selecting default endpoint displaying on My Account Page.
 
-== Source Code and Build Instructions ==
+== Source Code ==
 
-The human-readable (non-minified) JavaScript and CSS source for this plugin
-is publicly available here:
-
-https://github.com/yourusername/sewerel
-
-To build the production assets used in the distributed plugin:
-
-1. Clone the repository:
-   git clone https://github.com/sewerel/my-account-page-lite-for-divi.git
-
-2. Install dependencies:
-   npm install
-
-3. Build production assets:
-   npm run build
-
-This process generates the files located in /assets/js/*.min.js and /assets/css/*.min.css
-that are included in the WordPress.org plugin release.
+https://github.com/sewerel/my-account-page-lite-for-divi.git
 
 
 == Changelog ==
+
+= 1.0.1 – 2025-12-25 =
+* 🚀 Fixed styling of the endpoint content caused by missing wrapper
 
 = 1.0.0 – 2025-10-25 =
 * 🚀 Initial release clean release for wordpress.org

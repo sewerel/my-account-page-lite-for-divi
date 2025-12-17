@@ -16,14 +16,14 @@ let version = '1.0.0';
 const destRoot = 'D:/plugins';
 
 // Create versioned folder name: myplugin_1.0.0
-const destFolder = path.join(destRoot, dirName, version);
+const destFolder = path.join(destRoot);
 
 // Ensure the folder exists
 if (!fs.existsSync(destFolder)) {
   fs.mkdirSync(destFolder, { recursive: true });
 }
 
-const zipPath = path.join(destFolder, `${dirName}.zip`);
+const zipPath = path.join(destFolder, `${dirName}-v${version}.zip`);
 console.log('Creating zip at: ', zipPath);
 
 // create a file to stream archive data to.
@@ -61,6 +61,7 @@ archive.glob(
       //ignore filename
       'nodeParam.js',
       'ready.js',
+      'trunk.js',
       'copy.js',
       //ignore .git
       '*.git/**',
