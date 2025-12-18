@@ -6,7 +6,7 @@
  * Description: Adds custom endpoints to the WooCommerce My Account page.Supports renaming, reordering, and adding menu icons. Fully compatible with the Divi Builder for a seamless design experience.
  * Author: PowdiThemes
  * Author URI: https://powdithemes.com
- * Version: 1.0.1
+ * Version: 1.0.2
  * Text Domain: my-account-page-lite-for-divi
  * Requires at least: 5.2
  * Requires PHP: 7.4
@@ -31,7 +31,7 @@ if (!defined('MAPDL_TEMPLATE_PATH_LITE')) {
 }
 
 if (!defined('MAPDL_VERSION_LITE')) {
-    define('MAPDL_VERSION_LITE', '1.0.1');
+    define('MAPDL_VERSION_LITE', '1.0.2');
 
 
     foreach (glob(__DIR__ . "/includes/*.php") as $filename) {

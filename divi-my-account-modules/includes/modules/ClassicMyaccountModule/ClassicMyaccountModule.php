@@ -205,7 +205,7 @@ class ClassicMyaccountModule extends ET_Builder_Module {
 
         //Endpoint content
         $fields['endpoint_content_padding']  = [
-            'label'             => 'Endpoint padding',
+            'label'             => 'Content padding',
             'type'              => 'custom_margin',
             'mobile_options'    => true,
             'responsive'        => true,
@@ -215,7 +215,7 @@ class ClassicMyaccountModule extends ET_Builder_Module {
             'default'           => '30px|30px|30px|30px|||'
         ];
         $fields['endpoint_background']  = [
-            'label'             => 'Background',
+            'label'             => 'Content Background',
             'type'              => 'color-alpha',
             'options_category'  => 'basic_option',
             'tab_slug'          => 'advanced',
@@ -768,7 +768,20 @@ class ClassicMyaccountModule extends ET_Builder_Module {
         //     'tab_slug'      => 'advanced'
         // ];
 
-        $adv_fields['borders']['default']          = false;
+        $adv_fields['borders']['default']       = [
+            'label' => 'Endpoint Border',
+            'css'             => array(
+                'main' => array(
+                    'border_radii' => "%%order_class%% .divi_map-endpoint-content",
+                    'border_styles' => "%%order_class%% .divi_map-endpoint-content"
+                )
+
+            ),
+            'label_prefix'   => 'Content',
+            'toggle_slug'   => 'endpoint_content_toggle',
+            'tab_slug'      => 'advanced'
+        ];
+
         $adv_fields['borders']['nav_border']    = [
             'label' => 'Nav Border',
             'css'             => array(

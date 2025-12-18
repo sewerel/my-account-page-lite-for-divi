@@ -5,7 +5,7 @@ Requires at least: 5.2
 Text Domain: my-account-page-lite-for-divi
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -111,8 +111,11 @@ https://github.com/sewerel/my-account-page-lite-for-divi.git
 
 
 == Changelog ==
+= 1.0.2 – 2025-12-18 =
 
-= 1.0.1 – 2025-12-25 =
+* 🚀 Added endpoint content border options in the Module
+
+= 1.0.1 – 2025-12-16 =
 * 🚀 Fixed styling of the endpoint content caused by missing wrapper
 
 = 1.0.0 – 2025-10-25 =

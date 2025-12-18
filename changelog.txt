@@ -1,5 +1,9 @@
 
-## [1.0.1] – 2025-12-25
+## [1.0.2] – 2025-12-18
+### 🛠 Improvements
+🚀 Added endpoint content border options in the Module
+
+## [1.0.1] – 2025-12-16
 ### 🛠 Improvements
 🚀 Fixed styling of the endpoint content caused by missing wrapper
 
