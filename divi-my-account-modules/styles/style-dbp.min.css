@@ -90,6 +90,10 @@
     border-style: solid
 }
 
+.et_divi_builder #et_builder_outer_content .divi_map-endpoint-content-wrap {
+    border-style: solid;
+}
+
 .et_divi_builder #et_builder_outer_content .divi_map-endpoint-content-wrap table {
     overflow: hidden;
     border-collapse: unset;
