@@ -12,6 +12,14 @@ let version = '1.0.0';
 
 }());
 
+fs.copyFile('changelog.txt', `D:/plugins/changelog-${dirName}-v${version}.txt`, (err) => {
+  if (err) {
+    console.error('Changelog error occurred:', err);
+    return;
+  }
+  console.log(`changelog-${dirName}-v${version}.txt was copied successfully.`);
+});
+
 // Destination root
 const destRoot = 'D:/plugins';
 
