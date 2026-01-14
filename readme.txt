@@ -21,6 +21,14 @@ No more plain layouts or limited customization options. With this plugin, you ca
 
 Perfect for store owners, designers, developers and any Divi users who want to create a cohesive and professional WooCommerce experience — without writing a single line of code.
 
+**🎁 Free Divi My Account Layout Pack**
+
+To help you get started faster, we’ve created a free set of ready-to-use Divi layouts for the WooCommerce My Account page.
+
+These layouts are designed to work perfectly with Divi My Account Page Lite and let you instantly see what’s possible with real designs — no building from scratch.
+
+**[👉 Download the free layout pack](https://powdithemes.com/free-divi-my-account-layout-pack/)**
+
 ✅ **Features in the [Free (Lite) Version](https://powdithemes.com/divi-my-account-page-lite/?utm_source=wprepository&utm_medium=readme&utm_campaign=divi-my-account-page-lite&utm_content=demolink):**
 
 + **Rename WooCommerce Endpoints**
@@ -104,6 +112,11 @@ That feature is included in the Pro version.
 6. Change endpont label (name) and adding icon.
 7. Reorder endpoint Orders set to the top of the menu.
 8. Selecting default endpoint displaying on My Account Page.
+9. 4 layout pack on site by site.
+10. Depth layout.
+11. Vivid layout.
+12. Edge layout.
+13. Soft-shadow layout.
 
 == Source Code ==
 

@@ -39,12 +39,18 @@ class Settings {
     }
 
     public function register_setting() {
-        if (
-            isset($_POST['_wpnonce'])
-        ) {
-            $nonce = sanitize_text_field(wp_unslash($_POST['_wpnonce']));
-            $valid = wp_verify_nonce($nonce, 'mapdl-options');
-        }
+        /**
+         * This part of the code is left over of earlier implementation
+         * it is not nesesery but will stay commented for now
+         */
+        // if (
+        //     isset($_POST['_wpnonce'])
+        // ) {
+        //     $nonce = sanitize_text_field(wp_unslash($_POST['_wpnonce']));
+        //     $valid = wp_verify_nonce($nonce, 'mapdl-options');
+        // }
+
+
 
         register_setting(
             'mapdl',

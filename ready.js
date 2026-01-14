@@ -70,6 +70,7 @@ archive.glob(
       'nodeParam.js',
       'ready.js',
       'trunk.js',
+      'bump.js',
       'copy.js',
       //ignore .git
       '*.git/**',
